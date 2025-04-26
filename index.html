@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>ShopEase 🛍️</h1>
+        <div class="cart-icon">
+            🛒 <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <!-- Search and Filter -->
+    <section class="controls">
+        <input type="text" id="searchInput" placeholder="Search products...">
+        <select id="sortSelect">
+            <option value="">Sort by</option>
+            <option value="low-high">Price: Low to High</option>
+            <option value="high-low">Price: High to Low</option>
+        </select>
+        <select id="categoryFilter">
+            <option value="">All Categories</option>
+            <option value="clothes">Clothes</option>
+            <option value="shoes">Shoes</option>
+            <option value="electronics">Electronics</option>
+            <option value="accessories">Accessories</option>
+        </select>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="product-list" class="product-list">
+        <!-- Products will be inserted by JavaScript -->
+    </section>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="cart-modal">
+        <div class="cart-content">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p id="totalPrice">Total: ₹0</p>
+            <button id="checkoutBtn"><a href="checkout.html">Checkout</a></button>
+            <button id="closeCartBtn">Close</button>
+            <button id="clearCartBtn">Clear Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
